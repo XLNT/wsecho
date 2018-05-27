@@ -1,0 +1,38 @@
+{
+  "name": "@xlnt/an-old-man-at-a-cafe-in-the-50s",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "bin": "lib/index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "npm run build-ts && npm run tslint",
+    "ts-start": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint --project ."
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": "https://github.com/XLNT/an-old-man-at-a-cafe-in-the-50s",
+  "keywords": [
+    "ethereum"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/XLNT/an-old-man-at-a-cafe-in-the-50s/issues"
+  },
+  "homepage": "https://github.com/XLNT/an-old-man-at-a-cafe-in-the-50s#readme",
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
